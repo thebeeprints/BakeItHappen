@@ -1,4 +1,4 @@
-﻿Public Class Form1
+﻿Public Class LoadingScreen
     Private Sub ProgressBar1_Click(sender As Object, e As EventArgs) Handles ProgressBar1.Click
 
     End Sub

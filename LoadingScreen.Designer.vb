@@ -23,38 +23,45 @@ Partial Class LoadingScreen
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(LoadingScreen))
         Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.LoadingScreenTimer = New System.Windows.Forms.Timer(Me.components)
         Me.SuspendLayout()
         '
         'ProgressBar1
         '
         Me.ProgressBar1.BackColor = System.Drawing.Color.White
         Me.ProgressBar1.ForeColor = System.Drawing.Color.Green
-        Me.ProgressBar1.Location = New System.Drawing.Point(110, 347)
-        Me.ProgressBar1.Margin = New System.Windows.Forms.Padding(2)
+        Me.ProgressBar1.Location = New System.Drawing.Point(147, 427)
+        Me.ProgressBar1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ProgressBar1.Name = "ProgressBar1"
-        Me.ProgressBar1.Size = New System.Drawing.Size(580, 29)
+        Me.ProgressBar1.Size = New System.Drawing.Size(773, 36)
         Me.ProgressBar1.TabIndex = 0
         '
-        'Form1
+        'LoadingScreenTimer
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.LoadingScreenTimer.Enabled = True
+        Me.LoadingScreenTimer.Interval = 50
+        '
+        'LoadingScreen
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BackgroundImage = Global.BakeItHappen.My.Resources.Resources.LOADING_FORM__1_
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(784, 472)
+        Me.ClientSize = New System.Drawing.Size(1045, 581)
         Me.Controls.Add(Me.ProgressBar1)
         Me.DoubleBuffered = True
-        Me.Margin = New System.Windows.Forms.Padding(2)
-        Me.Name = "Form1"
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Name = "LoadingScreen"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Form1"
+        Me.Text = "BakeTrack"
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents ProgressBar1 As ProgressBar
-    Friend WithEvents Timer1 As Timer
+    Friend WithEvents LoadingScreenTimer As Timer
 End Class

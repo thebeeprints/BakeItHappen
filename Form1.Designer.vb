@@ -25,6 +25,7 @@ Partial Class Form1
         Me.components = New System.ComponentModel.Container()
         Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.ProgressBar2 = New System.Windows.Forms.ProgressBar()
         Me.SuspendLayout()
         '
         'ProgressBar1
@@ -36,6 +37,13 @@ Partial Class Form1
         Me.ProgressBar1.Size = New System.Drawing.Size(774, 36)
         Me.ProgressBar1.TabIndex = 0
         '
+        'ProgressBar2
+        '
+        Me.ProgressBar2.Location = New System.Drawing.Point(146, 427)
+        Me.ProgressBar2.Name = "ProgressBar2"
+        Me.ProgressBar2.Size = New System.Drawing.Size(774, 36)
+        Me.ProgressBar2.TabIndex = 1
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -44,6 +52,7 @@ Partial Class Form1
         Me.BackgroundImage = Global.BakeItHappen.My.Resources.Resources.LOADING_FORM__1_
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1045, 581)
+        Me.Controls.Add(Me.ProgressBar2)
         Me.Controls.Add(Me.ProgressBar1)
         Me.DoubleBuffered = True
         Me.Name = "Form1"
@@ -55,4 +64,5 @@ Partial Class Form1
 
     Friend WithEvents ProgressBar1 As ProgressBar
     Friend WithEvents Timer1 As Timer
+    Friend WithEvents ProgressBar2 As ProgressBar
 End Class

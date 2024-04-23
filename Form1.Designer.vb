@@ -32,29 +32,32 @@ Partial Class Form1
         '
         Me.ProgressBar1.BackColor = System.Drawing.Color.White
         Me.ProgressBar1.ForeColor = System.Drawing.Color.Green
-        Me.ProgressBar1.Location = New System.Drawing.Point(146, 427)
+        Me.ProgressBar1.Location = New System.Drawing.Point(110, 347)
+        Me.ProgressBar1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ProgressBar1.Name = "ProgressBar1"
-        Me.ProgressBar1.Size = New System.Drawing.Size(774, 36)
+        Me.ProgressBar1.Size = New System.Drawing.Size(580, 29)
         Me.ProgressBar1.TabIndex = 0
         '
         'ProgressBar2
         '
-        Me.ProgressBar2.Location = New System.Drawing.Point(146, 427)
+        Me.ProgressBar2.Location = New System.Drawing.Point(110, 347)
+        Me.ProgressBar2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ProgressBar2.Name = "ProgressBar2"
-        Me.ProgressBar2.Size = New System.Drawing.Size(774, 36)
+        Me.ProgressBar2.Size = New System.Drawing.Size(580, 29)
         Me.ProgressBar2.TabIndex = 1
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BackgroundImage = Global.BakeItHappen.My.Resources.Resources.LOADING_FORM__1_
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1045, 581)
+        Me.ClientSize = New System.Drawing.Size(784, 472)
         Me.Controls.Add(Me.ProgressBar2)
         Me.Controls.Add(Me.ProgressBar1)
         Me.DoubleBuffered = True
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"

@@ -11,8 +11,8 @@ Public Class FireBaseApp
 
     Public Sub New()
         Dim config As New FirebaseConfig() With {
-            .AuthSecret = "LsBgkAmK485VYAW1mkoRw1gROtA6dV1FwkncTQzg",
-            .BasePath = "https://testing-firebase-b6205-default-rtdb.asia-southeast1.firebasedatabase.app/"
+            .AuthSecret = "vZtchRUFM6oKj3tHQrHaiIIUVnNxbNUQZc42eoeB",
+            .BasePath = "https://bakeithappen-db-default-rtdb.asia-southeast1.firebasedatabase.app/"
             }
         Try
             client = New FireSharp.FirebaseClient(config)
@@ -30,7 +30,7 @@ Public Class FireBaseApp
         Dim response = client.UpdateAsync(path, data)
         Return response.Result.StatusCode = System.Net.HttpStatusCode.OK
     End Function
-    S
+
     Public Function DeleteData(path As String) As Boolean
         Dim response = client.DeleteAsync(path)
         Return response.Result.StatusCode = System.Net.HttpStatusCode.OK

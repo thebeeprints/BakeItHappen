@@ -136,6 +136,12 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="ProductDataModel.vb" />
+    <Compile Include="SignIn.designer.vb">
+      <DependentUpon>SignIn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SignIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="UserDataModel.vb" />
   </ItemGroup>
   <ItemGroup>
@@ -150,6 +156,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignIn.resx">
+      <DependentUpon>SignIn.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -173,7 +182,29 @@
     <None Include="Resources\LOADING FORM %281%29.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="HideUnhide %281%29.png" />
+    <Content Include="HideUnhide.png" />
+    <Content Include="LOADING FORM %281%29.png" />
+    <Content Include="LOADING FORM %281%291.png" />
+    <Content Include="LOADING FORM.png" />
+    <Content Include="LoadingForm BG.png" />
+    <Content Include="Logo.png" />
+    <Content Include="Logo1.png" />
     <Content Include="Resources\cupcake.ico" />
+    <Content Include="Resources\HideUnhide %281%29.png" />
+    <None Include="Resources\Logo11.png" />
+    <None Include="Resources\Logo2.png" />
+    <None Include="Resources\HideUnhide %281%291.png" />
+    <Content Include="Resources\HideUnhide.png" />
+    <None Include="Resources\HideUnhide1.png" />
+    <Content Include="Resources\LOADING FORM %281%291.png" />
+    <None Include="Resources\LOADING FORM %281%292.png" />
+    <None Include="Resources\LOADING FORM %281%2911.png" />
+    <None Include="Resources\LOADING FORM1.png" />
+    <Content Include="Resources\LoadingForm BG.png" />
+    <None Include="Resources\LoadingForm BG1.png" />
+    <Content Include="Resources\Logo.png" />
+    <Content Include="Resources\Logo1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <Import Project="packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />

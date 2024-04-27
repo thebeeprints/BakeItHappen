@@ -10,8 +10,8 @@ Imports System.IO
 Imports System.Configuration
 Public Class FireBaseApp
     Private client As IFirebaseClient
-    Private authSecret As String = ConfigurationManager.AppSettings("authSecret")
-    Private basePath As String = ConfigurationManager.AppSettings("basePath")
+    Private authSecret As String = ConfigurationManager.AppSettings("FIREBASE_API_KEY")
+    Private basePath As String = ConfigurationManager.AppSettings("FIREBASE_AUTH_DOMAIN")
 
     Public Sub New()
         Dim config As New FirebaseConfig() With {
@@ -20,7 +20,7 @@ Public Class FireBaseApp
             }
         Try
             client = New FireSharp.FirebaseClient(config)
-            MessageBox.Show("connected")
+            'MessageBox.Show("connected")
         Catch ex As Exception
             MessageBox.Show("There is a problem with your internet connection. Please try again.")
         End Try

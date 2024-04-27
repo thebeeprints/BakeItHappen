@@ -63,6 +63,26 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property HideUnhide() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("HideUnhide", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property HideUnhide__1_() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("HideUnhide (1)", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property LOADING_FORM() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("LOADING FORM", resourceCulture)
@@ -76,6 +96,66 @@ Namespace My.Resources
         Friend ReadOnly Property LOADING_FORM__1_() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("LOADING FORM (1)", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property LOADING_FORM__1_1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("LOADING FORM (1)1", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property LOADING_FORM__1_11() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("LOADING FORM (1)11", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property LOADING_FORM1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("LOADING FORM1", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property LoadingForm_BG() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("LoadingForm BG", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Logo() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Logo", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Logo1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Logo1", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

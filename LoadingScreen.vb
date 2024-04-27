@@ -9,7 +9,6 @@ Public Class LoadingScreen
         If ProgressBar1.Value = 100 Then
             LoadingScreenTimer.Stop()
             Me.Hide()
-            LoginScreen.Show()
         End If
     End Sub
 

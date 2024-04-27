@@ -10,13 +10,13 @@ Imports System.IO
 Imports System.Configuration
 Public Class FireBaseApp
     Private client As IFirebaseClient
-    Private authSecret As String = ConfigurationManager.AppSettings("FIREBASE_API_KEY")
-    Private basePath As String = ConfigurationManager.AppSettings("FIREBASE_AUTH_DOMAIN")
+    Private FIREBASE_API_KEY As String = ConfigurationManager.AppSettings("FIREBASE_API_KEY")
+    Private FIREBASE_AUTH_DOMAIN As String = ConfigurationManager.AppSettings("FIREBASE_AUTH_DOMAIN")
 
     Public Sub New()
         Dim config As New FirebaseConfig() With {
-            .AuthSecret = authSecret,
-            .BasePath = basePath
+            .AuthSecret = FIREBASE_API_KEY,
+            .BasePath = FIREBASE_AUTH_DOMAIN
             }
         Try
             client = New FireSharp.FirebaseClient(config)

@@ -173,14 +173,6 @@
     <None Include="Resources\LOADING FORM %281%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="HideUnhide %281%29.png" />
-    <Content Include="HideUnhide.png" />
-    <Content Include="LOADING FORM %281%29.png" />
-    <Content Include="LOADING FORM %281%291.png" />
-    <Content Include="LOADING FORM.png" />
-    <Content Include="LoadingForm BG.png" />
-    <Content Include="Logo.png" />
-    <Content Include="Logo1.png" />
     <Content Include="Resources\cupcake.ico" />
     <Content Include="Resources\HideUnhide %281%29.png" />
     <None Include="Resources\Logo11.png" />

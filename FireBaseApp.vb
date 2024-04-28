@@ -16,7 +16,7 @@ Public Class FireBaseApp
     Public Sub New()
         Dim config As New FirebaseConfig() With {
             .AuthSecret = FIREBASE_API_KEY,
-            .BasePath = FIREBASE_AUTH_DOMAIN
+            .BasePath = "https://bakeithappen-db-default-rtdb.asia-southeast1.firebasedatabase.app/"
             }
         Try
             client = New FireSharp.FirebaseClient(config)
@@ -41,9 +41,9 @@ Public Class FireBaseApp
         Return response.Result.StatusCode = System.Net.HttpStatusCode.OK
     End Function
 
-    Public Function GetData(Of DataModel)(path As String) As Dictionary(Of String, DataModel)
+    Public Function GetData(Of data)(path As String) As Dictionary(Of String, data)
         Dim response = client.Get(path)
-        Return response.ResultAs(Of Dictionary(Of String, DataModel))()
+        Return response.ResultAs(Of Dictionary(Of String, data))()
     End Function
 
 End Class
